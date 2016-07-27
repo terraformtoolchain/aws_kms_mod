@@ -4,7 +4,7 @@ variable "description" {
 }
 variable "key_usage" {
   description = "(Optional) Specifies the intended use of the key. Defaults to ENCRYPT/DECRYPT, and only symmetric encryption and decryption are supported."
-  default = "ENCRYPT/DECRYPT"
+  default = "ENCRYPT_DECRYPT"
 }
 variable "policy" {
   description = "(Optional) A valid policy JSON document."
