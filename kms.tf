@@ -6,3 +6,8 @@ resource "aws_kms_key" "main" {
 	is_enabled					= "${ var.is_enabled }"
 	enable_key_rotation			= "${ var.enable_key_rotation }"
 }
+
+resource "aws_kms_alias" "main" {
+	name						= "${ var.name }"
+	target_key_id				= "${ aws_kms_key.main.key_id }"
+}

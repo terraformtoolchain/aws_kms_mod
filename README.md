@@ -4,6 +4,7 @@ A minimal Terraform module that gives the user the ability to create KMS keys.
 
 ## Module Input Variables
 
+- `name` - (Optional) The name of the key as viewed in the AWS console. Defaults to 'default-key'.
 - `description` - (Optional) The description of the key as viewed in AWS console.
 - `key_usage` - (Optional) Specifies the intended use of the key. Defaults to ENCRYPT/DECRYPT, and     only symmetric encryption and decryption are supported.
 - `policy` - (Optional) A valid policy JSON document.

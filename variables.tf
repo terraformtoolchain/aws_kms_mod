@@ -1,3 +1,8 @@
+variable "name" {
+	description = "(Optional) The name of the key."
+	default = "default-key"
+}
+
 variable "description" {
 	description = "(Optional) The description of the key as viewed in AWS console."
 	default = ""
